@@ -1,0 +1,239 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:10px;
+}
+.dropzone{
+    width: 200px;
+    min-height: 90vh;
+    background-color:#e7e7e7;
+    float:left;
+    margin:10px;
+    padding: 0px 10px;
+    /* position: relative; */
+}
+.card{
+    /* max-height:100px; */
+    width: 180px;
+    background-color: rgb(250, 249, 185);
+    background-color: #fff;
+    margin: 10px 0px;
+    padding: 10px 10px 30px 10px;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+}
+.canvas{
+    background-color: rgba(128, 154, 161, 0.1);
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+.drag-start{
+    opacity: 0.01;
+    border: dashed 1px gray;
+}
+.drag-enter{
+    background-color: rgb(170, 253, 145);
+
+    background-color:#d1d1d1;
+
+}
+.push-down{
+    margin-bottom: 140px;
+}
+.elipses{
+    background-color: transparent;
+    border: none;
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    /* margin-top: 15px; */
+}
+.taller{
+    height: 200px;
+}
+.add-button{
+    background-color: aliceblue;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+.header{
+    margin: 10px;
+}
+.drop-header{
+    font-weight: 500;
+    text-align: center;
+}
+.description{
+    margin-top: 12px;
+    width: 100%;
+    min-height: 16px;
+}
+.delete{
+    color: red;
+    display: block;
+    float: right;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;;
+    cursor: pointer;
+    width:15%;
+}
+
+.display-none{
+    display: none;
+}
+.display-block{
+    display: block;
+}
+.dropdown {
+    position: absolute;
+    /* display: inline-block; */
+    display: block;
+    top: 0px;
+    z-index: 2;
+}
+
+.dropdown-content {
+    display: block;
+    background-color: #f9f9f9;
+   width: 160px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.dropdown-content > div {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+.dropdown-content >div:hover {background-color: #f1f1f1}
+.divider{
+    height: 1px;
+    background-color: rgb(133, 133, 133);
+    margin: 0px 5px;
+    display: block;
+}
+.spimg{
+    width: 20px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+}
+.red{
+    color: red;
+}
+.point-up{
+    -webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+transform: rotate(180deg)
+}
+.chevrons{
+    background-color: transparent;
+    border: none;
+    position:absolute;
+    bottom: 10px;
+    left: 8px;
+    cursor: pointer;
+    display: block;
+    background-image: url("../images/chevrons2.svg");
+    height: 13px; /* You must set a specified height */
+    width: 13px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 13px 13px;
+    opacity: 0.4;
+}
+.chevrons:hover{
+    opacity: 1;
+}
+
+.elipses2{
+    background-color: transparent;
+    top: 5px;
+    right: 7px;
+    border: none;
+    position:absolute;
+    cursor: pointer;
+    display: block;
+    background-image: url("../images/ellipses.svg");
+    height: 13px; /* You must set a specified height */
+    width: 13px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 13px 13px;
+    opacity: 0.4;
+}
+.elipses2:hover{
+    opacity: 1;
+}
+.notes{
+    margin-top: 8px;
+    background-color: #fff;
+    font-size: small;
+    overflow: hidden;
+    height: 50%;
+}
+
+
+.note{
+    width: 170px;
+    margin: 0px;
+    background-color: #fff;
+    display: inline-block;
+}
+.note > div{
+float: left;
+}
+.note > div:nth-child(1){ 
+    width: 20px;
+    padding: 1px 2px 0px 0px;
+}
+.note > div:nth-child(2){ 
+    width: 145px;
+}
+
+
+.note input[type=checkbox]{
+    margin: 2px; 
+
+
+}
+/* .card{
+width: 320px;
+background-color: rgb(243, 242, 195);
+display: inline-block;
+} */
+
+#editNoteInput{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    z-index: 9;
+    outline: none;
+    resize: none;
+    overflow-y: scroll;
+    outline: none;
+    border:dashed 1px rgb(92, 92, 92);
+    background-color: transparent;
+}
+.note-text{
+    min-height: 16px;
+
+}
+
+/* #context{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background-color: rgb(192, 192, 192);
+} */

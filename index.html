@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/drag.css">
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/drag.js"></script>
+
+</head>
+<body>
+
+
+    <div class="header">
+        <h2>Drag</h2>
+        <!-- <input id="addCard" class="add-button" type="button" value="+"> -->
+        <button id="addCard" class="add-button"><span>+</span></button>
+    </div>
+    <textarea style="left: 500px; top: -500px;" data-subjet="" id="editNoteInput" name="editNoteInput" cols="30" rows="2"></textarea>
+
+<div class="canvas">
+
+    <div id="context" class="dropdown display-block">
+        <div class="dropdown-content">
+            <div><span class="spimg">e</span> Edit</div>
+            <div><span class="spimg red">x</span>Delete</div>
+
+            <span class="divider"></span>
+            <div><span class="spimg "></span>Export</div>
+        </div>
+    </div>
+
+
+    <div id="backlog" class="dropzone">
+    </div>
+	
+	<div id="ready" class="dropzone">
+
+    </div>
+	<div id="doing" class="dropzone">
+
+    </div>
+    <div id="done" class="dropzone">
+
+    </div>
+	
+
+
+   </div>
+
+
+    <script>
+        main();
+    </script>
+</body>
+</html>
